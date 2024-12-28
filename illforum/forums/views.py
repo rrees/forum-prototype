@@ -6,3 +6,8 @@ from django.shortcuts import render
 
 def index(request):
     return HttpResponse("Hello from Django!")
+
+
+def forums(request):
+    context = {}
+    return render(request, "forums/forums.html", context)
